@@ -19,8 +19,11 @@ namespace game_lật_thẻ_1._1
         {
             this.components = new System.ComponentModel.Container();
             this.pnlHeader = new System.Windows.Forms.Panel();
-            this.btnBack = new System.Windows.Forms.Button();
+            this.btnSound = new System.Windows.Forms.Button();
+            this.btnHelp = new System.Windows.Forms.Button();
+            this.btnLeaderboard = new System.Windows.Forms.Button();
             this.btnRestart = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.lblScore = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
             this.prgTime = new System.Windows.Forms.ProgressBar();
@@ -37,8 +40,11 @@ namespace game_lật_thẻ_1._1
             // pnlHeader
             // 
             this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.pnlHeader.Controls.Add(this.btnBack);
+            this.pnlHeader.Controls.Add(this.btnSound);
+            this.pnlHeader.Controls.Add(this.btnHelp);
+            this.pnlHeader.Controls.Add(this.btnLeaderboard);
             this.pnlHeader.Controls.Add(this.btnRestart);
+            this.pnlHeader.Controls.Add(this.btnBack);
             this.pnlHeader.Controls.Add(this.lblScore);
             this.pnlHeader.Controls.Add(this.lblTime);
             this.pnlHeader.Controls.Add(this.prgTime);
@@ -51,23 +57,59 @@ namespace game_lật_thẻ_1._1
             this.pnlHeader.Size = new System.Drawing.Size(704, 118);
             this.pnlHeader.TabIndex = 0;
             // 
-            // btnBack
+            // btnSound
             // 
-            this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBack.FlatAppearance.BorderSize = 0;
-            this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(202)))), ((int)(((byte)(202)))));
-            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold);
-            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.btnBack.Location = new System.Drawing.Point(595, 12);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(95, 36);
-            this.btnBack.TabIndex = 7;
-            this.btnBack.Text = "Thoát";
-            this.btnBack.UseVisualStyleBackColor = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            this.btnSound.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSound.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
+            this.btnSound.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSound.FlatAppearance.BorderSize = 0;
+            this.btnSound.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
+            this.btnSound.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSound.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold);
+            this.btnSound.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(65)))), ((int)(((byte)(85)))));
+            this.btnSound.Location = new System.Drawing.Point(328, 12);
+            this.btnSound.Name = "btnSound";
+            this.btnSound.Size = new System.Drawing.Size(42, 34);
+            this.btnSound.TabIndex = 10;
+            this.btnSound.Text = "🔊";
+            this.btnSound.UseVisualStyleBackColor = false;
+            this.btnSound.Click += new System.EventHandler(this.btnSound_Click);
+            // 
+            // btnHelp
+            // 
+            this.btnHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(242)))), ((int)(((byte)(255)))));
+            this.btnHelp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHelp.FlatAppearance.BorderSize = 0;
+            this.btnHelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(231)))), ((int)(((byte)(255)))));
+            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHelp.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold);
+            this.btnHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(70)))), ((int)(((byte)(229)))));
+            this.btnHelp.Location = new System.Drawing.Point(376, 12);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(42, 34);
+            this.btnHelp.TabIndex = 9;
+            this.btnHelp.Text = "❓";
+            this.btnHelp.UseVisualStyleBackColor = false;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            // 
+            // btnLeaderboard
+            // 
+            this.btnLeaderboard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLeaderboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(243)))), ((int)(((byte)(199)))));
+            this.btnLeaderboard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLeaderboard.FlatAppearance.BorderSize = 0;
+            this.btnLeaderboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(138)))));
+            this.btnLeaderboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLeaderboard.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnLeaderboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(64)))), ((int)(((byte)(14)))));
+            this.btnLeaderboard.Location = new System.Drawing.Point(424, 12);
+            this.btnLeaderboard.Name = "btnLeaderboard";
+            this.btnLeaderboard.Size = new System.Drawing.Size(82, 34);
+            this.btnLeaderboard.TabIndex = 8;
+            this.btnLeaderboard.Text = "🏆 BXH";
+            this.btnLeaderboard.UseVisualStyleBackColor = false;
+            this.btnLeaderboard.Click += new System.EventHandler(this.btnLeaderboard_Click);
             // 
             // btnRestart
             // 
@@ -79,20 +121,38 @@ namespace game_lật_thẻ_1._1
             this.btnRestart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRestart.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold);
             this.btnRestart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(102)))), ((int)(((byte)(241)))));
-            this.btnRestart.Location = new System.Drawing.Point(490, 12);
+            this.btnRestart.Location = new System.Drawing.Point(512, 12);
             this.btnRestart.Name = "btnRestart";
-            this.btnRestart.Size = new System.Drawing.Size(98, 36);
-            this.btnRestart.TabIndex = 6;
+            this.btnRestart.Size = new System.Drawing.Size(90, 34);
+            this.btnRestart.TabIndex = 7;
             this.btnRestart.Text = "Chơi lại";
             this.btnRestart.UseVisualStyleBackColor = false;
             this.btnRestart.Click += new System.EventHandler(this.btnRestart_Click);
+            // 
+            // btnBack
+            // 
+            this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(202)))), ((int)(((byte)(202)))));
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold);
+            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.btnBack.Location = new System.Drawing.Point(608, 12);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(80, 34);
+            this.btnBack.TabIndex = 6;
+            this.btnBack.Text = "Thoát";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // lblScore
             // 
             this.lblScore.AutoSize = true;
             this.lblScore.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.lblScore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
-            this.lblScore.Location = new System.Drawing.Point(335, 52);
+            this.lblScore.Location = new System.Drawing.Point(240, 52);
             this.lblScore.Name = "lblScore";
             this.lblScore.Size = new System.Drawing.Size(95, 21);
             this.lblScore.TabIndex = 5;
@@ -103,9 +163,9 @@ namespace game_lật_thẻ_1._1
             this.lblTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTime.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.lblTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
-            this.lblTime.Location = new System.Drawing.Point(440, 52);
+            this.lblTime.Location = new System.Drawing.Point(470, 52);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(250, 21);
+            this.lblTime.Size = new System.Drawing.Size(218, 21);
             this.lblTime.TabIndex = 4;
             this.lblTime.Text = "Thời gian: 00s";
             this.lblTime.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -134,22 +194,22 @@ namespace game_lật_thẻ_1._1
             // lblLevel
             // 
             this.lblLevel.AutoSize = true;
-            this.lblLevel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblLevel.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.lblLevel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
-            this.lblLevel.Location = new System.Drawing.Point(260, 16);
+            this.lblLevel.Location = new System.Drawing.Point(200, 17);
             this.lblLevel.Name = "lblLevel";
-            this.lblLevel.Size = new System.Drawing.Size(135, 21);
+            this.lblLevel.Size = new System.Drawing.Size(120, 20);
             this.lblLevel.TabIndex = 1;
             this.lblLevel.Text = "Cấp độ: 1 (4 x 4)";
             // 
             // lblMode
             // 
             this.lblMode.AutoSize = true;
-            this.lblMode.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
+            this.lblMode.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.lblMode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
-            this.lblMode.Location = new System.Drawing.Point(16, 17);
+            this.lblMode.Location = new System.Drawing.Point(16, 18);
             this.lblMode.Name = "lblMode";
-            this.lblMode.Size = new System.Drawing.Size(161, 19);
+            this.lblMode.Size = new System.Drawing.Size(155, 19);
             this.lblMode.TabIndex = 0;
             this.lblMode.Text = "Chế độ: Lật thẻ ghép cặp";
             // 
@@ -193,6 +253,9 @@ namespace game_lật_thẻ_1._1
         private System.Windows.Forms.ProgressBar prgTime;
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Label lblScore;
+        private System.Windows.Forms.Button btnSound;
+        private System.Windows.Forms.Button btnHelp;
+        private System.Windows.Forms.Button btnLeaderboard;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnRestart;
         private System.Windows.Forms.Panel pnlBoard;

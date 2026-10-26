@@ -1,18 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\game l\u1EADt th\u1EBB 1.1\\",
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe5.0\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D1578E31-CA06-4016-BEAC-02B05A8CC2C6}|game l\u1EADt th\u1EBB 1.1.csproj|c:\\users\\asus\\source\\repos\\ltwin\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\game l\u1EADt th\u1EBB 1.1\\formgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D1578E31-CA06-4016-BEAC-02B05A8CC2C6}|game l\u1EADt th\u1EBB 1.1.csproj|c:\\users\\asus\\source\\repos\\ltwin\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\gamelatthe5.0\\formabout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D1578E31-CA06-4016-BEAC-02B05A8CC2C6}|game l\u1EADt th\u1EBB 1.1.csproj|solutionrelative:formabout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1578E31-CA06-4016-BEAC-02B05A8CC2C6}|game l\u1EADt th\u1EBB 1.1.csproj|C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe5.0\\forminputname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D1578E31-CA06-4016-BEAC-02B05A8CC2C6}|game l\u1EADt th\u1EBB 1.1.csproj|solutionrelative:forminputname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1578E31-CA06-4016-BEAC-02B05A8CC2C6}|game l\u1EADt th\u1EBB 1.1.csproj|C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe5.0\\formgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1578E31-CA06-4016-BEAC-02B05A8CC2C6}|game l\u1EADt th\u1EBB 1.1.csproj|solutionrelative:formgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1578E31-CA06-4016-BEAC-02B05A8CC2C6}|game l\u1EADt th\u1EBB 1.1.csproj|C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\game l\u1EADt th\u1EBB 1.1\\formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D1578E31-CA06-4016-BEAC-02B05A8CC2C6}|game l\u1EADt th\u1EBB 1.1.csproj|solutionrelative:formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D1578E31-CA06-4016-BEAC-02B05A8CC2C6}|game l\u1EADt th\u1EBB 1.1.csproj|C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe5.0\\formgame.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1578E31-CA06-4016-BEAC-02B05A8CC2C6}|game l\u1EADt th\u1EBB 1.1.csproj|solutionrelative:formgame.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1578E31-CA06-4016-BEAC-02B05A8CC2C6}|game l\u1EADt th\u1EBB 1.1.csproj|C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\game l\u1EADt th\u1EBB 1.1\\formgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D1578E31-CA06-4016-BEAC-02B05A8CC2C6}|game l\u1EADt th\u1EBB 1.1.csproj|C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe5.0\\formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1578E31-CA06-4016-BEAC-02B05A8CC2C6}|game l\u1EADt th\u1EBB 1.1.csproj|solutionrelative:formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1578E31-CA06-4016-BEAC-02B05A8CC2C6}|game l\u1EADt th\u1EBB 1.1.csproj|C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe5.0\\formmenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1578E31-CA06-4016-BEAC-02B05A8CC2C6}|game l\u1EADt th\u1EBB 1.1.csproj|solutionrelative:formmenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1578E31-CA06-4016-BEAC-02B05A8CC2C6}|game l\u1EADt th\u1EBB 1.1.csproj|C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe5.0\\gamemode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1578E31-CA06-4016-BEAC-02B05A8CC2C6}|game l\u1EADt th\u1EBB 1.1.csproj|solutionrelative:gamemode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1578E31-CA06-4016-BEAC-02B05A8CC2C6}|game l\u1EADt th\u1EBB 1.1.csproj|C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe5.0\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1578E31-CA06-4016-BEAC-02B05A8CC2C6}|game l\u1EADt th\u1EBB 1.1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1578E31-CA06-4016-BEAC-02B05A8CC2C6}|game l\u1EADt th\u1EBB 1.1.csproj|C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe5.0\\formgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D1578E31-CA06-4016-BEAC-02B05A8CC2C6}|game l\u1EADt th\u1EBB 1.1.csproj|solutionrelative:formgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1578E31-CA06-4016-BEAC-02B05A8CC2C6}|game l\u1EADt th\u1EBB 1.1.csproj|C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe5.0\\formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D1578E31-CA06-4016-BEAC-02B05A8CC2C6}|game l\u1EADt th\u1EBB 1.1.csproj|solutionrelative:formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +50,132 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormGame.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\game l\u1EADt th\u1EBB 1.1\\FormGame.cs",
-              "RelativeDocumentMoniker": "FormGame.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\game l\u1EADt th\u1EBB 1.1\\FormGame.cs",
-              "RelativeToolTip": "FormGame.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T05:52:25.221Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormMenu.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\game l\u1EADt th\u1EBB 1.1\\FormMenu.cs",
-              "RelativeDocumentMoniker": "FormMenu.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\game l\u1EADt th\u1EBB 1.1\\FormMenu.cs [Design]",
-              "RelativeToolTip": "FormMenu.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "FormAbout.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe5.0\\FormAbout.cs",
+              "RelativeDocumentMoniker": "FormAbout.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe5.0\\FormAbout.cs [Design]",
+              "RelativeToolTip": "FormAbout.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T04:30:36.97Z",
+              "WhenOpened": "2026-10-26T06:34:09.935Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormInputName.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe5.0\\FormInputName.cs",
+              "RelativeDocumentMoniker": "FormInputName.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe5.0\\FormInputName.cs [Design]",
+              "RelativeToolTip": "FormInputName.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-26T06:00:55.565Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FormGame.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\game l\u1EADt th\u1EBB 1.1\\FormGame.cs",
+              "Title": "FormGame.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe5.0\\FormGame.cs",
               "RelativeDocumentMoniker": "FormGame.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\game l\u1EADt th\u1EBB 1.1\\FormGame.cs [Design]",
-              "RelativeToolTip": "FormGame.cs [Design]",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe5.0\\FormGame.cs",
+              "RelativeToolTip": "FormGame.cs",
+              "ViewState": "AgIAANcCAAAAAAAAAADwv5ACAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T05:52:25.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe5.0\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe5.0\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T13:34:44.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GameMode.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe5.0\\GameMode.cs",
+              "RelativeDocumentMoniker": "GameMode.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe5.0\\GameMode.cs",
+              "RelativeToolTip": "GameMode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T13:34:47.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormMenu.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe5.0\\FormMenu.Designer.cs",
+              "RelativeDocumentMoniker": "FormMenu.Designer.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe2\\FormMenu.Designer.cs*",
+              "RelativeToolTip": "..\\GameLatThe2\\FormMenu.Designer.cs*",
+              "ViewState": "AgIAADYAAAAAAAAAAAAIwEMAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T15:33:35.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormMenu.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe5.0\\FormMenu.cs",
+              "RelativeDocumentMoniker": "FormMenu.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe5.0\\FormMenu.cs",
+              "RelativeToolTip": "FormMenu.cs",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAcwK8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T15:33:27.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormGame.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe5.0\\FormGame.Designer.cs",
+              "RelativeDocumentMoniker": "FormGame.Designer.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe5.0\\FormGame.Designer.cs",
+              "RelativeToolTip": "FormGame.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T13:50:52.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormGame.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe5.0\\FormGame.cs",
+              "RelativeDocumentMoniker": "FormGame.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe2\\FormGame.cs [Design]*",
+              "RelativeToolTip": "..\\GameLatThe2\\FormGame.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-19T04:30:31.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FormMenu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe5.0\\FormMenu.cs",
+              "RelativeDocumentMoniker": "FormMenu.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\LTWIN\\b\u00E1o c\u00E1o gi\u1EEFa k\u00EC\\GameLatThe2\\FormMenu.cs [Design]",
+              "RelativeToolTip": "..\\GameLatThe2\\FormMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T04:30:36.97Z"
             }
           ]
         }

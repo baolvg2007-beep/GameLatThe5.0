@@ -24,6 +24,9 @@ namespace game_lật_thẻ_1._1
             this.lblSubtitle = new System.Windows.Forms.Label();
             this.btnModeMemory = new System.Windows.Forms.Button();
             this.btnModeSequence = new System.Windows.Forms.Button();
+            this.btnLeaderboardMenu = new System.Windows.Forms.Button();
+            this.btnAboutMenu = new System.Windows.Forms.Button();
+            this.btnSoundMenu = new System.Windows.Forms.Button();
             this.btnExitStep1 = new System.Windows.Forms.Button();
             this.lblFooter = new System.Windows.Forms.Label();
 
@@ -70,6 +73,9 @@ namespace game_lật_thẻ_1._1
             this.pnlStep1.Controls.Add(this.lblSubtitle);
             this.pnlStep1.Controls.Add(this.btnModeMemory);
             this.pnlStep1.Controls.Add(this.btnModeSequence);
+            this.pnlStep1.Controls.Add(this.btnLeaderboardMenu);
+            this.pnlStep1.Controls.Add(this.btnAboutMenu);
+            this.pnlStep1.Controls.Add(this.btnSoundMenu);
             this.pnlStep1.Controls.Add(this.btnExitStep1);
             this.pnlStep1.Controls.Add(this.lblFooter);
             this.pnlStep1.Location = new System.Drawing.Point(0, 0);
@@ -79,7 +85,7 @@ namespace game_lật_thẻ_1._1
 
             // lblLogo
             this.lblLogo.Font = new System.Drawing.Font("Segoe UI Emoji", 32F);
-            this.lblLogo.Location = new System.Drawing.Point(0, 36);
+            this.lblLogo.Location = new System.Drawing.Point(0, 24);
             this.lblLogo.Name = "lblLogo";
             this.lblLogo.Size = new System.Drawing.Size(500, 55);
             this.lblLogo.Text = "";
@@ -88,7 +94,7 @@ namespace game_lật_thẻ_1._1
             // lblTitle
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Bold);
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(15, 23, 42);
-            this.lblTitle.Location = new System.Drawing.Point(0, 95);
+            this.lblTitle.Location = new System.Drawing.Point(0, 78);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(500, 42);
             this.lblTitle.Text = "GAME LẬT THẺ";
@@ -97,7 +103,7 @@ namespace game_lật_thẻ_1._1
             // lblSubtitle
             this.lblSubtitle.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblSubtitle.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
-            this.lblSubtitle.Location = new System.Drawing.Point(0, 140);
+            this.lblSubtitle.Location = new System.Drawing.Point(0, 122);
             this.lblSubtitle.Name = "lblSubtitle";
             this.lblSubtitle.Size = new System.Drawing.Size(500, 25);
             this.lblSubtitle.Text = "Rèn luyện trí nhớ và khả năng tập trung";
@@ -111,9 +117,9 @@ namespace game_lật_thẻ_1._1
             this.btnModeMemory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModeMemory.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnModeMemory.ForeColor = System.Drawing.Color.White;
-            this.btnModeMemory.Location = new System.Drawing.Point(45, 190);
+            this.btnModeMemory.Location = new System.Drawing.Point(45, 156);
             this.btnModeMemory.Name = "btnModeMemory";
-            this.btnModeMemory.Size = new System.Drawing.Size(410, 90);
+            this.btnModeMemory.Size = new System.Drawing.Size(410, 80);
             this.btnModeMemory.TabIndex = 0;
             this.btnModeMemory.Text = "LẬT THẺ TRÍ NHỚ\r\nTìm và ghép các cặp thẻ biểu tượng giống nhau";
             this.btnModeMemory.UseVisualStyleBackColor = false;
@@ -127,13 +133,61 @@ namespace game_lật_thẻ_1._1
             this.btnModeSequence.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModeSequence.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnModeSequence.ForeColor = System.Drawing.Color.White;
-            this.btnModeSequence.Location = new System.Drawing.Point(45, 305);
+            this.btnModeSequence.Location = new System.Drawing.Point(45, 248);
             this.btnModeSequence.Name = "btnModeSequence";
-            this.btnModeSequence.Size = new System.Drawing.Size(410, 90);
+            this.btnModeSequence.Size = new System.Drawing.Size(410, 80);
             this.btnModeSequence.TabIndex = 1;
             this.btnModeSequence.Text = "LẬT THẺ THEO THỨ TỰ\r\nTìm và lật các số tăng dần từ 1 → N";
             this.btnModeSequence.UseVisualStyleBackColor = false;
             this.btnModeSequence.Click += new System.EventHandler(this.btnModeSequence_Click);
+
+            // btnLeaderboardMenu
+            this.btnLeaderboardMenu.BackColor = System.Drawing.Color.FromArgb(254, 243, 199);
+            this.btnLeaderboardMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLeaderboardMenu.FlatAppearance.BorderSize = 0;
+            this.btnLeaderboardMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(253, 230, 138);
+            this.btnLeaderboardMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLeaderboardMenu.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold);
+            this.btnLeaderboardMenu.ForeColor = System.Drawing.Color.FromArgb(146, 64, 14);
+            this.btnLeaderboardMenu.Location = new System.Drawing.Point(45, 340);
+            this.btnLeaderboardMenu.Name = "btnLeaderboardMenu";
+            this.btnLeaderboardMenu.Size = new System.Drawing.Size(200, 44);
+            this.btnLeaderboardMenu.TabIndex = 2;
+            this.btnLeaderboardMenu.Text = "🏆  Bảng thành tích";
+            this.btnLeaderboardMenu.UseVisualStyleBackColor = false;
+            this.btnLeaderboardMenu.Click += new System.EventHandler(this.btnLeaderboardMenu_Click);
+
+            // btnAboutMenu
+            this.btnAboutMenu.BackColor = System.Drawing.Color.FromArgb(238, 242, 255);
+            this.btnAboutMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAboutMenu.FlatAppearance.BorderSize = 0;
+            this.btnAboutMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(224, 231, 255);
+            this.btnAboutMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAboutMenu.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold);
+            this.btnAboutMenu.ForeColor = System.Drawing.Color.FromArgb(79, 70, 229);
+            this.btnAboutMenu.Location = new System.Drawing.Point(255, 340);
+            this.btnAboutMenu.Name = "btnAboutMenu";
+            this.btnAboutMenu.Size = new System.Drawing.Size(200, 44);
+            this.btnAboutMenu.TabIndex = 3;
+            this.btnAboutMenu.Text = "📖  Hướng dẫn";
+            this.btnAboutMenu.UseVisualStyleBackColor = false;
+            this.btnAboutMenu.Click += new System.EventHandler(this.btnAboutMenu_Click);
+
+            // btnSoundMenu
+            this.btnSoundMenu.BackColor = System.Drawing.Color.FromArgb(241, 245, 249);
+            this.btnSoundMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSoundMenu.FlatAppearance.BorderSize = 0;
+            this.btnSoundMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(226, 232, 240);
+            this.btnSoundMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSoundMenu.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold);
+            this.btnSoundMenu.ForeColor = System.Drawing.Color.FromArgb(51, 65, 85);
+            this.btnSoundMenu.Location = new System.Drawing.Point(45, 396);
+            this.btnSoundMenu.Name = "btnSoundMenu";
+            this.btnSoundMenu.Size = new System.Drawing.Size(200, 42);
+            this.btnSoundMenu.TabIndex = 4;
+            this.btnSoundMenu.Text = "🔊  Âm thanh: Bật";
+            this.btnSoundMenu.UseVisualStyleBackColor = false;
+            this.btnSoundMenu.Click += new System.EventHandler(this.btnSoundMenu_Click);
 
             // btnExitStep1
             this.btnExitStep1.BackColor = System.Drawing.Color.FromArgb(226, 232, 240);
@@ -143,10 +197,10 @@ namespace game_lật_thẻ_1._1
             this.btnExitStep1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExitStep1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnExitStep1.ForeColor = System.Drawing.Color.FromArgb(71, 85, 105);
-            this.btnExitStep1.Location = new System.Drawing.Point(180, 435);
+            this.btnExitStep1.Location = new System.Drawing.Point(255, 396);
             this.btnExitStep1.Name = "btnExitStep1";
-            this.btnExitStep1.Size = new System.Drawing.Size(140, 42);
-            this.btnExitStep1.TabIndex = 2;
+            this.btnExitStep1.Size = new System.Drawing.Size(200, 42);
+            this.btnExitStep1.TabIndex = 5;
             this.btnExitStep1.Text = "✕  Thoát";
             this.btnExitStep1.UseVisualStyleBackColor = false;
             this.btnExitStep1.Click += new System.EventHandler(this.btnExit_Click);
@@ -154,7 +208,7 @@ namespace game_lật_thẻ_1._1
             // lblFooter
             this.lblFooter.Font = new System.Drawing.Font("Segoe UI", 8.5F);
             this.lblFooter.ForeColor = System.Drawing.Color.FromArgb(148, 163, 184);
-            this.lblFooter.Location = new System.Drawing.Point(0, 515);
+            this.lblFooter.Location = new System.Drawing.Point(0, 480);
             this.lblFooter.Name = "lblFooter";
             this.lblFooter.Size = new System.Drawing.Size(500, 20);
             this.lblFooter.Text = "Phiên bản 1.1 • LTWin";
@@ -452,6 +506,9 @@ namespace game_lật_thẻ_1._1
         private System.Windows.Forms.Label lblSubtitle;
         private System.Windows.Forms.Button btnModeMemory;
         private System.Windows.Forms.Button btnModeSequence;
+        private System.Windows.Forms.Button btnLeaderboardMenu;
+        private System.Windows.Forms.Button btnAboutMenu;
+        private System.Windows.Forms.Button btnSoundMenu;
         private System.Windows.Forms.Button btnExitStep1;
         private System.Windows.Forms.Label lblFooter;
 

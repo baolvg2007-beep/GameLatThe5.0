@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GameMode.cs" />
+    <Compile Include="SoundManager.cs" />
+    <Compile Include="LeaderboardManager.cs" />
     <Compile Include="FormMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +60,24 @@
     </Compile>
     <Compile Include="FormGame.Designer.cs">
       <DependentUpon>FormGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInputName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInputName.Designer.cs">
+      <DependentUpon>FormInputName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLeaderboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLeaderboard.Designer.cs">
+      <DependentUpon>FormLeaderboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -82,8 +102,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
+    <Content Include="thanhtichs.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bg\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="assets\**\*.*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
