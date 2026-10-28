@@ -149,6 +149,10 @@ namespace game_lật_thẻ_1._1
                 "Đề tài: MiniGame Lật Thẻ Trí Nhớ (Memory Card Game)\n\n" +
                 "═══════════════════════════════════════════════════════════════\n" +
                 "THÀNH VIÊN THỰC HIỆN:\n" +
+                "Hứa Nhựt Tuấn - MSSV 51.01.104.114 - nhóm Charliekode\n" +
+                "Lê Văn Gia Bảo - MSSV 51.01.104.007 - nhóm Charliekode\n" +
+                "Huỳnh Phú Vinh - MSSV 51.01.104.120 - nhóm Charliekode\n" +
+                "Nguyễn Đăng Khoa - MSSV 51.01.104.045 - nhóm Charliekode\n" +
                 "═══════════════════════════════════════════════════════════════\n\n" +
                 "1. Thành viên phụ trách Logic & Gameplay:\n" +
                 "   • Nhiệm vụ: Xây dựng Game Engine, Thuật toán Fisher-Yates Shuffle, Đếm ngược, Cấu hình ma trận\n\n" +
