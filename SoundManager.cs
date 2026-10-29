@@ -7,15 +7,6 @@ using System.Windows.Forms;
 
 namespace game_lật_thẻ_1._1
 {
-    /// <summary>
-    /// Quản lý âm thanh trò chơi (Nhạc nền BGM và các hiệu ứng sự kiện).
-    /// Hỗ trợ phát âm thanh đa luồng qua Windows MCI (winmm.dll) kết hợp dự phòng SoundPlayer:
-    /// - Nhạc nền (BGM) phát lặp liên tục, không bị ngắt quãng khi lật thẻ.
-    /// - Hiệu ứng âm thanh khi lật thẻ (flip), lật thẻ sai (wrong), thắng game (victory), thua game (gameover).
-    /// - Âm thanh khi lật thẻ đúng cũ đã được xóa hoàn toàn theo yêu cầu.
-    /// - Âm lượng các tệp âm thanh gốc đã được giảm nhẹ tạo cảm giác êm dịu.
-    /// - Bẫy lỗi try...catch toàn diện: nếu thiếu thư mục 'bg/' hoặc tệp âm thanh, game không bao giờ bị crash.
-    /// </summary>
     public static class SoundManager
     {
         [DllImport("winmm.dll", CharSet = CharSet.Auto)]
@@ -86,14 +77,12 @@ namespace game_lật_thẻ_1._1
                     return;
                 }
 
-                // Khởi tạo các kênh âm thanh qua MCI
                 InitMciDevice(ALIAS_BGM, "bgm.wav");
                 InitMciDevice(ALIAS_FLIP, "flip.wav");
                 InitMciDevice(ALIAS_WRONG, "false.wav");
                 InitMciDevice(ALIAS_VICTORY, "victory.wav");
                 InitMciDevice(ALIAS_GAMEOVER, "gameover.wav");
 
-                // Khởi tạo dự phòng bằng SoundPlayer (chuẩn .NET)
                 flipPlayer = CreatePlayer("flip.wav");
                 wrongPlayer = CreatePlayer("false.wav");
                 victoryPlayer = CreatePlayer("victory.wav");
@@ -171,7 +160,6 @@ namespace game_lật_thẻ_1._1
             }
             catch (Exception)
             {
-                // Bẫy lỗi an toàn: bỏ qua lỗi nạp từng file riêng lẻ
             }
             return null;
         }
@@ -197,7 +185,6 @@ namespace game_lật_thẻ_1._1
             }
             catch { }
 
-            // Dự phòng bằng SoundPlayer nếu MCI có trục trặc
             try
             {
                 if (isLoop)
@@ -212,33 +199,20 @@ namespace game_lật_thẻ_1._1
             catch { }
         }
 
-        /// <summary>
-        /// Hiệu ứng âm thanh khi lật thẻ bài
-        /// </summary>
         public static void PlayFlip()
         {
             PlayMci(ALIAS_FLIP, flipPlayer);
         }
 
-        /// <summary>
-        /// Hiệu ứng âm thanh khi lật thẻ đúng (Đã xóa theo yêu cầu).
-        /// </summary>
         public static void PlayCorrect()
         {
-            // Âm thanh lật đúng đã được xóa bỏ hoàn toàn theo yêu cầu
         }
 
-        /// <summary>
-        /// Hiệu ứng âm thanh khi lật thẻ sai
-        /// </summary>
         public static void PlayWrong()
         {
             PlayMci(ALIAS_WRONG, wrongPlayer);
         }
 
-        /// <summary>
-        /// Hiệu ứng âm thanh khi chiến thắng trò chơi
-        /// </summary>
         public static void PlayVictory()
         {
             if (IsMuted || !HasSoundsAvailable) return;
@@ -250,9 +224,6 @@ namespace game_lật_thẻ_1._1
             catch { }
         }
 
-        /// <summary>
-        /// Hiệu ứng âm thanh khi thua cuộc (hết giờ)
-        /// </summary>
         public static void PlayGameOver()
         {
             if (IsMuted || !HasSoundsAvailable) return;
@@ -264,9 +235,6 @@ namespace game_lật_thẻ_1._1
             catch { }
         }
 
-        /// <summary>
-        /// Phát nhạc nền lặp vô tận
-        /// </summary>
         public static void PlayBgm()
         {
             if (IsMuted || !HasSoundsAvailable) return;

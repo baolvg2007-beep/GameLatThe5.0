@@ -14,7 +14,6 @@ namespace game_lật_thẻ_1._1
 
             try
             {
-                // Khởi tạo hệ thống âm thanh ban đầu an toàn (có bẫy lỗi đầy đủ)
                 SoundManager.InitializeSounds();
                 SoundManager.PlayBgm();
             }
@@ -33,11 +32,10 @@ namespace game_lật_thẻ_1._1
                     cboTheme.SelectedIndex = 0;
 
                 if (cboTimeLimit.Items.Count > 0)
-                    cboTimeLimit.SelectedIndex = 1; // Mặc định: 1 phút
+                    cboTimeLimit.SelectedIndex = 1;
 
                 UpdateSoundButtonText();
 
-                // Bước 1 hiển thị, bước 2 ẩn
                 pnlStep1.Visible = true;
                 pnlStep1.BringToFront();
                 pnlStep2.Visible = false;
@@ -102,10 +100,6 @@ namespace game_lật_thẻ_1._1
             }
         }
 
-        // ============================
-        // BƯỚC 1: Chọn chế độ chơi
-        // ============================
-
         private void btnModeMemory_Click(object sender, EventArgs e)
         {
             try
@@ -138,7 +132,6 @@ namespace game_lật_thẻ_1._1
         {
             try
             {
-                // Cập nhật tiêu đề bước 2 theo chế độ đã chọn
                 if (selectedMode == GameMode.MemoryMatch)
                 {
                     lblChosenMode.Text = "Chế độ: Lật Thẻ Trí Nhớ";
@@ -146,11 +139,9 @@ namespace game_lật_thẻ_1._1
                     chkHardcore.Checked = false;
                     chkHardcore.Visible = false;
 
-                    // Hiện thanh chọn chủ đề cho game Trí nhớ
                     lblTheme.Visible = true;
                     cboTheme.Visible = true;
 
-                    // Đặt mặc định cho Memory (phải chẵn)
                     numRows.Value = 4;
                     numCols.Value = 4;
                 }
@@ -161,7 +152,6 @@ namespace game_lật_thẻ_1._1
                     chkHardcore.Visible = true;
                     chkHardcore.Text = "Hardcore (sai 1 bước = reset về số 1)";
 
-                    // Ẩn thanh chọn chủ đề (game thứ tự chỉ hiện số, không cần theme)
                     lblTheme.Visible = false;
                     cboTheme.Visible = false;
 
@@ -171,7 +161,6 @@ namespace game_lật_thẻ_1._1
 
                 UpdateValidationHint();
 
-                // Chuyển sang bước 2
                 pnlStep1.Visible = false;
                 pnlStep2.Visible = true;
                 pnlStep2.BringToFront();
@@ -182,10 +171,6 @@ namespace game_lật_thẻ_1._1
             }
         }
 
-        // ============================
-        // BƯỚC 2: Chọn độ khó & cấu hình
-        // ============================
-
         private void btnEasy_Click(object sender, EventArgs e)
         {
             try
@@ -194,7 +179,7 @@ namespace game_lật_thẻ_1._1
                 if (selectedMode == GameMode.MemoryMatch)
                 {
                     numRows.Value = 3;
-                    numCols.Value = 4; // 12 thẻ = 6 cặp (chẵn)
+                    numCols.Value = 4;
                 }
                 else
                 {
@@ -286,8 +271,7 @@ namespace game_lật_thẻ_1._1
                 bool enablePreview = chkPreview.Checked;
                 bool isHardcore = chkHardcore.Checked && selectedMode == GameMode.SequentialOrder;
 
-                // Lấy thời gian đã chọn (0 = vô hạn)
-                int timeLimitSeconds = 60; // Mặc định 1 phút
+                int timeLimitSeconds = 60;
                 string timeChoice = cboTimeLimit.SelectedItem?.ToString() ?? "1 phút";
                 switch (timeChoice)
                 {
@@ -298,7 +282,6 @@ namespace game_lật_thẻ_1._1
                     case "Vô hạn": timeLimitSeconds = 0; break;
                 }
 
-                // Ràng buộc cho chế độ Trí nhớ: tổng phải chẵn
                 if (selectedMode == GameMode.MemoryMatch && (rows * cols) % 2 != 0)
                 {
                     MessageBox.Show(
@@ -314,14 +297,12 @@ namespace game_lật_thẻ_1._1
                 frmGame.ShowDialog();
                 this.Show();
 
-                // Cập nhật lại nút âm thanh và tiếp tục phát nhạc nếu chưa tắt
                 UpdateSoundButtonText();
                 if (!SoundManager.IsMuted)
                 {
                     SoundManager.PlayBgm();
                 }
 
-                // Reset về bước 1 khi quay lại menu
                 pnlStep2.Visible = false;
                 pnlStep1.Visible = true;
                 pnlStep1.BringToFront();
@@ -350,7 +331,6 @@ namespace game_lật_thẻ_1._1
             }
         }
 
-        // Vẽ hiệu ứng nổi 3D Arcade Playful cho các nút bấm trong Menu
         private void BtnArcade_Paint(object sender, PaintEventArgs e)
         {
             try
@@ -365,14 +345,12 @@ namespace game_lật_thẻ_1._1
                     Color lightColor = ControlPaint.Light(c, 0.4f);
                     Color darkColor = ControlPaint.Dark(c, 0.35f);
 
-                    // Đường viền sáng nổi bật phía trên & trái
                     using (Pen lightPen = new Pen(lightColor, 3))
                     {
                         g.DrawLine(lightPen, 0, 1, w - 1, 1);
                         g.DrawLine(lightPen, 1, 0, 1, h - 1);
                     }
 
-                    // Đường bóng lún 3D đậm phía dưới & phải (tạo chiều sâu như phím Arcade)
                     using (Pen darkPen = new Pen(darkColor, 4))
                     {
                         g.DrawLine(darkPen, 0, h - 2, w - 1, h - 2);

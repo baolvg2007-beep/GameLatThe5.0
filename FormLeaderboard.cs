@@ -47,7 +47,6 @@ namespace game_lật_thẻ_1._1
                         r.PlayedAt.ToString("dd/MM/yyyy HH:mm")
                     );
 
-                    // Đổi màu nổi bật cho top 3
                     if (rank == 1)
                         dgvLeaderboard.Rows[rowIndex].DefaultCellStyle.BackColor = Color.FromArgb(254, 249, 195);
                     else if (rank == 2)

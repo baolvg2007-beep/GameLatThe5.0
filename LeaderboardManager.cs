@@ -21,12 +21,6 @@ namespace game_lật_thẻ_1._1
         }
     }
 
-    /// <summary>
-    /// Quản lý Bảng thành tích (Leaderboard) đọc/ghi file thanhtichs.txt bằng System.IO.
-    /// Có đầy đủ bẫy lỗi Exception Handling (try...catch) ở toàn bộ tiến trình nhạy cảm:
-    /// Bắt UnauthorizedAccessException, DirectoryNotFoundException, IOException và Exception.
-    /// Đáp ứng tiêu chí Exception Handling 1.0đ của đồ án.
-    /// </summary>
     public static class LeaderboardManager
     {
         private static string filePath;
@@ -51,7 +45,6 @@ namespace game_lật_thẻ_1._1
                     }
                 }
 
-                // Nếu chưa có file nào thì tạo file mới rỗng
                 if (!File.Exists(filePath))
                 {
                     File.WriteAllText(filePath, "", Encoding.UTF8);
@@ -83,10 +76,6 @@ namespace game_lật_thẻ_1._1
             }
         }
 
-        /// <summary>
-        /// Ghi thêm một bản ghi thành tích mới vào file thanhtichs.txt (dạng Append)
-        /// Có đầy đủ bẫy lỗi try...catch
-        /// </summary>
         public static bool SaveRecord(string name, int score, int timeRemaining, string mode)
         {
             if (string.IsNullOrWhiteSpace(name))
@@ -103,7 +92,6 @@ namespace game_lật_thẻ_1._1
 
             try
             {
-                // Đảm bảo thư mục cha tồn tại
                 string dir = Path.GetDirectoryName(filePath);
                 if (!string.IsNullOrEmpty(dir) && !Directory.Exists(dir))
                 {
@@ -154,10 +142,6 @@ namespace game_lật_thẻ_1._1
             }
         }
 
-        /// <summary>
-        /// Đọc toàn bộ danh sách thành tích từ file thanhtichs.txt và sắp xếp theo điểm số giảm dần
-        /// Có đầy đủ bẫy lỗi try...catch
-        /// </summary>
         public static List<LeaderboardRecord> LoadRecords()
         {
             List<LeaderboardRecord> records = new List<LeaderboardRecord>();
@@ -190,11 +174,9 @@ namespace game_lật_thẻ_1._1
                     }
                     catch
                     {
-                        // Bỏ qua dòng bị lỗi định dạng, không làm sập ứng dụng
                     }
                 }
 
-                // Sắp xếp giảm dần theo điểm số, nếu bằng điểm thì ưu tiên thời gian còn lại nhiều hơn
                 return records
                     .OrderByDescending(r => r.Score)
                     .ThenByDescending(r => r.TimeRemaining)
@@ -202,7 +184,6 @@ namespace game_lật_thẻ_1._1
             }
             catch (FileNotFoundException)
             {
-                // File chưa tồn tại -> trả về rỗng an toàn
                 return records;
             }
             catch (UnauthorizedAccessException ex)
@@ -234,10 +215,6 @@ namespace game_lật_thẻ_1._1
             }
         }
 
-        /// <summary>
-        /// Xóa toàn bộ lịch sử thành tích
-        /// Có đầy đủ bẫy lỗi try...catch
-        /// </summary>
         public static bool ClearRecords()
         {
             try

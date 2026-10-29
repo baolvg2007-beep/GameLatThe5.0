@@ -6,19 +6,12 @@ namespace game_lật_thẻ_1._1
 {
     internal static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// Tích hợp cơ chế Bẫy lỗi toàn cục (Global Exception Handling)
-        /// Đảm bảo game 100% không bao giờ bị văng (crash) trong quá trình chơi theo tiêu chí 1.0đ.
-        /// </summary>
         [STAThread]
         static void Main()
         {
-            // Bẫy lỗi luồng UI WinForms
             Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
             Application.ThreadException += Application_ThreadException;
 
-            // Bẫy lỗi không đồng bộ / background thread
             AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
 
             Application.EnableVisualStyles();
